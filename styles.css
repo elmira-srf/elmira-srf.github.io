@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #312113; /* Brown3 */
+}
+
+header {
+    background-color: #30BFBF; /* GreenBlue1 */
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #312113; /* Brown3 */
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: #30BFBF; /* GreenBlue1 */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
