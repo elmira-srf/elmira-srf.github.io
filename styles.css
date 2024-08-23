@@ -9,25 +9,56 @@ body {
 header {
     background-color: #30BFBF; /* GreenBlue1 */
     color: white;
-    padding: 2rem;
+    padding: 3rem;
     text-align: center;
 }
 
 .container {
     max-width: 1200px;
     margin: 2rem auto;
-    padding: 2rem;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0;
 }
 
-h1, h2 {
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    min-height: 400px;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+section:nth-child(odd) {
+    background-color: #30BFBF; /* GreenBlue1 */
     color: #312113; /* Brown3 */
 }
 
-p {
-    line-height: 1.6;
+section:nth-child(even) {
+    background-color: #0DAD8D; /* GreenBlue1 */
+    color: #49311d; /* Brown2 */
+}
+
+section img {
+    max-width: 45%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section div {
+    max-width: 50%;
+}
+
+h1 {
+    color: #49311d; /* Brown2 */
+}
+
+h2 {
+    color: #624226; /* Brown1 */
+}
+
+p, ul li {
+    color: #312113; /* Brown3 */
 }
 
 ul {
@@ -35,15 +66,24 @@ ul {
     padding: 0;
 }
 
-li {
+ul li {
     margin-bottom: 0.5rem;
 }
 
 a {
-    color: #30BFBF; /* GreenBlue1 */
+    color: #49311d; /* Brown2 */
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+.container .contact-info {
+    background-color: #8DD8CC; /* LightGreenBlue */
+    color: #312113; /* Brown3 */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
