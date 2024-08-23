@@ -3,11 +3,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #312113; /* Brown3 */
+    color: #172862; /* Dark Blue */
 }
 
 header {
-    background-color: #30BFBF; /* GreenBlue1 */
+    background-color: #8DD8CC; /* LightGreenBlue */
     color: white;
     padding: 3rem;
     text-align: center;
@@ -31,12 +31,12 @@ section {
 
 section:nth-child(odd) {
     background-color: #30BFBF; /* GreenBlue1 */
-    color: #312113; /* Brown3 */
+    color: #172862; /* Dark Blue */
 }
 
 section:nth-child(even) {
-    background-color: #0DAD8D; /* GreenBlue1 */
-    color: #49311d; /* Brown2 */
+    background-color: #8DD8CC; /* LightGreenBlue */
+    color: #172862; /* Dark Blue */
 }
 
 section img {
@@ -50,15 +50,15 @@ section div {
 }
 
 h1 {
-    color: #49311d; /* Brown2 */
+    color: #F5F0E1; /* Soft Beige */
 }
 
 h2 {
-    color: #624226; /* Brown1 */
+    color: #1F3A93; /* Navy Blue */
 }
 
 p, ul li {
-    color: #312113; /* Brown3 */
+    color: #172862; /* Dark Blue */
 }
 
 ul {
@@ -71,7 +71,7 @@ ul li {
 }
 
 a {
-    color: #49311d; /* Brown2 */
+    color: #172862; /* Dark Blue */
     text-decoration: none;
 }
 
@@ -80,8 +80,8 @@ a:hover {
 }
 
 .container .contact-info {
-    background-color: #8DD8CC; /* LightGreenBlue */
-    color: #312113; /* Brown3 */
+    background-color: #30BFBF; /* GreenBlue1 */
+    color: #172862; /* Dark Blue */
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
