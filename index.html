@@ -3,72 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elmira Sarrafi's Portfolio</title>
+    <title>Elmira Sarrafi - Software Developer</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <img src="assets/logo.png" alt="Elmira Sarrafi Logo" class="logo">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Elmira Sarrafi</h1>
+            <p class="tagline">Mobile and Web Developer | AI Enthusiast</p>
+        </div>
     </header>
-    <div class="container">
-        <section>
+
+    <main class="container">
+        <section id="about">
             <div>
                 <h2>About Me</h2>
-                <p>I'm Elmira Sarrafi, a passionate software developer based in Toronto, ON. I specialize in creating robust and user-friendly mobile and web applications.</p>
+                <p>I'm a passionate software developer based in Toronto, ON, specializing in creating robust and user-friendly mobile and web applications. With a strong background in Artificial Intelligence, I leverage my expertise in machine learning and natural language processing to build innovative solutions.</p>
             </div>
-            <img src="assets/sample.jpg" alt="Elmira Sarrafi">
+            <img src="assets/profile-photo.jpg" alt="Elmira Sarrafi" class="profile-photo">
         </section>
 
-        <section>
-            <img src="assets/sample.jpg" alt="Skills">
-            <div>
-                <h2>Skills</h2>
-                <ul>
-                    <li>Python, JavaScript, TypeScript, Swift, Objective-C, C++, Java</li>
-                    <li>React Native, React, JSX, HTML, CSS</li>
-                    <li>SQL, MySQL, SQLite, PostgreSQL</li>
-                    <li>Git, GitHub, AWS, Google Cloud, Firebase, Figma, Jira</li>
-                    <li>OOP, MVC, MVVM</li>
-                </ul>
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>Swift</li>
+                        <li>Objective-C</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Technologies</h3>
+                    <ul>
+                        <li>React Native</li>
+                        <li>React</li>
+                        <li>JSX</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li>SQL</li>
+                        <li>MySQL</li>
+                        <li>SQLite</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>AWS</li>
+                        <li>Google Cloud</li>
+                        <li>Firebase</li>
+                        <li>Figma</li>
+                        <li>Jira</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <section>
-            <div>
-                <h2>Experience</h2>
-                <ul>
-                    <li><strong>Software Engineer at Immigrate.ai (Mar 2023 - Present)</strong></li>
-                    <li><strong>Mobile and Web Developer at SAVVII Group (Sep 2022 - Feb 2023)</strong></li>
-                    <li><strong>iOS Developer at Saina (Apr 2016 - Oct 2016)</strong></li>
-                </ul>
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Software Engineer</h3>
+                    <p class="company">Immigrate.ai</p>
+                    <p class="date">March 2023 - Present</p>
+                    <ul>
+                        <li>Developed front-end for a React Native mobile app to streamline immigration processes.</li>
+                        <li>Automated document generation using Google App Script and JavaScript, resulting in 90% reduction in processing time.</li>
+                        <li>Built and maintained multiple client websites using WordPress.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>Mobile and Web Developer</h3>
+                    <p class="company">SAVVII Group Incorporated</p>
+                    <p class="date">September 2022 - February 2023</p>
+                    <ul>
+                        <li>Led the development of a React Native banking app using TypeScript.</li>
+                        <li>Set up app environment to consume RESTful APIs and optimized state management using MobX/State-Tree.</li>
+                        <li>Developed reusable React Native components, reducing development time.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>iOS Developer</h3>
+                    <p class="company">Saina</p>
+                    <p class="date">April 2016 - October 2016</p>
+                    <ul>
+                        <li>Designed and developed a language learning app from scratch using Swift.</li>
+                        <li>Collaborated with a cross-functional team of Back-End and Front-End developers to deliver a fully functional product.</li>
+                    </ul>
+                </div>
             </div>
-            <img src="assets/sample.jpg" alt="Experience">
         </section>
 
-        <section>
-            <img src="assets/sample.jpg" alt="Projects">
-            <div>
-                <h2>Education</h2>
-                <ul>
-                    <li><strong>George Brown College</strong> - Mobile Application Development and Strategy (2022)</li>
-                    <li><strong>Amirkabir University of Technology</strong> - Master of Computer Science in Artificial Intelligence (2020)</li>
-                    <li><strong>Azad University of Tehran</strong> - Bachelor of Computer Science in Software Engineering (2016)</li>
-                </ul>
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-grid">
+                <div class="education-item">
+                    <h3>Mobile Application Development and Strategy</h3>
+                    <p class="school">George Brown College</p>
+                    <p class="date">2022</p>
+                </div>
+                <div class="education-item">
+                    <h3>Master of Computer Science in Artificial Intelligence</h3>
+                    <p class="school">Amirkabir University of Technology</p>
+                    <p class="date">2020</p>
+                </div>
+                <div class="education-item">
+                    <h3>Bachelor of Computer Science in Software Engineering</h3>
+                    <p class="school">Azad University of Tehran</p>
+                    <p class="date">2016</p>
+                </div>
             </div>
         </section>
 
-        <section class="contact-info">
-            <div>
-                <h2>Contact Information</h2>
-                <p>Feel free to reach out to me:</p>
-                <ul>
-                    <li>Email: <a href="mailto:elmira.sarrafi@gmail.com">elmira.sarrafi@gmail.com</a></li>
-                    <li>GitHub: <a href="https://github.com/elmira-srf">github.com/elmira-srf</a></li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/elmira-sarrafi">linkedin.com/in/elmira-sarrafi</a></li>
-                </ul>
+        <section id="contact" class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+            <div class="contact-links">
+                <a href="mailto:elmira.sarrafi@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>elmira.sarrafi@gmail.com</span>
+                </a>
+                <a href="https://github.com/elmira-srf" class="contact-item" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>github.com/elmira-srf</span>
+                </a>
+                <a href="https://www.linkedin.com/in/elmira-sarrafi" class="contact-item" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    <span>linkedin.com/in/elmira-sarrafi</span>
+                </a>
             </div>
-            <img src="assets/sample.jpg" alt="Projects">
         </section>
-    </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Elmira Sarrafi. All rights reserved.</p>
+    </footer>
 </body>
 </html>
