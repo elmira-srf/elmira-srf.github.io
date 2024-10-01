@@ -1,24 +1,28 @@
 :root {
-    --primary-color: #312113;
-    --secondary-color: #b7a68e;
-    --accent-color: #e4dcd1;
-    --text-color: #333333;
-    --light-text-color: #ffffff;
+    --primary-color: #2C3E50;
+    --secondary-color: #3498DB;
+    --accent-color: #E74C3C;
+    --background-color: #c9f0fa;
+    --text-color: #34495E;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--accent-color);
+    background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
 }
 
-header {
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: var(--primary-color);
-    color: var(--light-text-color);
-    padding: 1rem 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -27,7 +31,7 @@ nav {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
 }
 
 nav ul {
@@ -40,7 +44,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--light-text-color);
+    color: var(--background-color);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -51,13 +55,15 @@ nav ul li a:hover {
 }
 
 .logo {
-    height: 50px;
-    border-radius: 50%;
+    height: 40px;
 }
 
 .hero {
+    background-color: var(--primary-color);
+    color: var(--background-color);
     text-align: center;
-    padding: 4rem 0;
+    padding: 8rem 0 4rem;
+    margin-top: 60px;
 }
 
 h1 {
@@ -191,10 +197,21 @@ h2 {
 
 .contact-info {
     background-color: var(--primary-color);
-    color: var(--light-text-color);
+    color: var(--background-color);
     padding: 3rem;
     border-radius: 8px;
     text-align: center;
+}
+
+.contact-item:hover {
+    color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 1rem 0;
 }
 
 .contact-links {
@@ -213,20 +230,9 @@ h2 {
     transition: color 0.3s ease;
 }
 
-.contact-item:hover {
-    color: var(--secondary-color);
-}
-
 .contact-item i {
     font-size: 1.5rem;
     margin-right: 0.5rem;
-}
-
-footer {
-    background-color: var(--primary-color);
-    color: var(--light-text-color);
-    text-align: center;
-    padding: 1rem 0;
 }
 
 @media screen and (max-width: 768px) {

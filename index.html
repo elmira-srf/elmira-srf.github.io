@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header class="sticky-header">
         <nav>
             <img src="assets/logo.png" alt="Elmira Sarrafi Logo" class="logo">
             <ul>
@@ -20,11 +20,12 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="hero">
-            <h1>Elmira Sarrafi</h1>
-            <p class="tagline">Mobile and Web Developer | AI Enthusiast</p>
-        </div>
     </header>
+
+    <div class="hero">
+        <h1>Elmira Sarrafi</h1>
+        <p class="tagline">Mobile and Web Developer | AI Enthusiast</p>
+    </div>
 
     <main class="container">
         <section id="about">
@@ -32,7 +33,7 @@
                 <h2>About Me</h2>
                 <p>I'm a passionate software developer based in Toronto, ON, specializing in creating robust and user-friendly mobile and web applications. With a strong background in Artificial Intelligence, I leverage my expertise in machine learning and natural language processing to build innovative solutions.</p>
             </div>
-            <img src="assets/profile-photo.jpg" alt="Elmira Sarrafi" class="profile-photo">
+            <img src="assets/3.png" alt="Elmira Sarrafi" class="profile-photo">
         </section>
 
         <section id="skills">
@@ -161,7 +162,18 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 Elmira Sarrafi. All rights reserved.</p>
+        <p>&copy; 2024 Elmira Sarrafi. All rights reserved.</p>
     </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
